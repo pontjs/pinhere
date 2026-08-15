@@ -16,6 +16,8 @@ try {
   const [packed] = JSON.parse(stdout);
   const files = new Set(packed.files.map(({ path }) => path));
   for (const expected of [
+    "LICENSE",
+    "NOTICE",
     "README.md",
     "dist/index.d.ts",
     "dist/index.js",

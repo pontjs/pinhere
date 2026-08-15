@@ -4,14 +4,14 @@
     "kind": "product-owned-pontx-spec",
     "repository": "https://github.com/jasonHzq/pinhere",
     "path": "apps/web/specs/spec.pontx.json",
-    "commit": "e1ad3385463ac3d97a750cd134fb75dea077c334",
-    "url": "https://raw.githubusercontent.com/jasonHzq/pinhere/e1ad3385463ac3d97a750cd134fb75dea077c334/apps/web/specs/spec.pontx.json",
+    "commit": "576e6f7160b5bb04d5856620def23c6bd3b25082",
+    "url": "https://raw.githubusercontent.com/jasonHzq/pinhere/576e6f7160b5bb04d5856620def23c6bd3b25082/apps/web/specs/spec.pontx.json",
     "sha256": "2a5f9d5796eefc683428b72d676dedc75f85e02b7b97f8de8c7942e66256ab5f",
-    "license": null
+    "license": "MIT"
   },
   "discovery": {
     "url": "https://pinhere.dev/.well-known/pontx.json",
-    "status": "unreachable",
+    "status": "domain-unregistered",
     "verifiedAt": "2026-08-15"
   },
   "output": {
@@ -20,7 +20,6 @@
     "proxyDisabledOperations": 34
   },
   "releaseBlockedBy": [
-    "No redistribution license",
-    "pinhere.dev is not bound and the canonical discovery URL is unreachable"
+    "pinhere.dev is unregistered, so the canonical production API and discovery URL are unreachable"
   ]
 }

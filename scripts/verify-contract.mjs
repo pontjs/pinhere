@@ -54,11 +54,11 @@ assert.equal(spec.components.securitySchemes.pinherePat.bearerFormat, "ph_pat_*"
 
 const actualHash = createHash("sha256").update(bytes).digest("hex");
 assert.equal(actualHash, provenance.source.sha256);
-assert.equal(provenance.source.commit, "e1ad3385463ac3d97a750cd134fb75dea077c334");
+assert.equal(provenance.source.commit, "576e6f7160b5bb04d5856620def23c6bd3b25082");
 assert.equal(provenance.output.operations, 34);
 assert.equal(provenance.output.schemas, 36);
 assert.equal(provenance.output.proxyDisabledOperations, 34);
-assert.equal(provenance.source.license, null);
+assert.equal(provenance.source.license, "MIT");
 assert(!/ph_pat_[A-Za-z0-9_-]{12,}/.test(bytes.toString("utf8")),
   "canonical contract contains a PAT-shaped value");
 

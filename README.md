@@ -3,13 +3,12 @@
 Type-safe Pinhere SDK and preview-first CLI generated only from Pinhere's
 canonical PontxSpec.
 
-This repository is a local release candidate generated from the public,
-product-owned contract in [`jasonHzq/pinhere`](https://github.com/jasonHzq/pinhere).
-It is not publishable yet: Pinhere declares no redistribution license, and
-`pinhere.dev` plus `/.well-known/pontx.json` are not currently reachable. The
-available Vercel Preview is not the canonical production origin. The package
-intentionally remains `private` and `UNLICENSED` until those product-owned
-gates are resolved.
+This repository is generated from the MIT-licensed, product-owned contract in
+[`jasonHzq/pinhere`](https://github.com/jasonHzq/pinhere). The source and
+package are ready for public review, but npm publication remains fail-closed
+until `pinhere.dev` serves the production API and canonical
+`/.well-known/pontx.json` discovery resource. The current Vercel Preview is not
+the canonical production origin.
 
 ## Safety boundary
 
