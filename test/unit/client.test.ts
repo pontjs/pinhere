@@ -58,7 +58,7 @@ describe("@pontx/pinhere", () => {
     await expect(client.issues.listIssues({ limit: 10, status: "open" }))
       .resolves.toEqual(payload);
     const [url, init] = fetchMock.mock.calls[0] as [URL, RequestInit];
-    expect(url.toString()).toBe("https://pinhere.dev/api/v1/issues?limit=10&status=open");
+    expect(url.toString()).toBe("https://pinhere-jasonhzqs-projects.vercel.app/api/v1/issues?limit=10&status=open");
     expect(init.method).toBe("GET");
     expect(init.body).toBeUndefined();
     expect(new Headers(init.headers).get("Authorization")).toBe("Bearer fixture-access-token");
@@ -94,7 +94,7 @@ describe("@pontx/pinhere", () => {
       codeVerifier: "fixture-verifier",
     });
     const [url, init] = fetchMock.mock.calls[0] as [URL, RequestInit];
-    expect(url.toString()).toBe("https://pinhere.dev/api/v1/oauth/token");
+    expect(url.toString()).toBe("https://pinhere-jasonhzqs-projects.vercel.app/api/v1/oauth/token");
     expect(new Headers(init.headers).has("Authorization")).toBe(false);
     expect(new Headers(init.headers).has("Cookie")).toBe(false);
     expect(JSON.parse(String(init.body))).toMatchObject({ grantType: "authorization_code" });

@@ -15,8 +15,8 @@ assert.equal(spec.name, "pinhere");
 assert.equal(spec.style, "RESTFul");
 assert.deepEqual(spec.servers, [{
   id: "production",
-  url: "https://pinhere.dev/api/v1",
-  description: "Pinhere 生产 API。",
+  url: "https://pinhere-jasonhzqs-projects.vercel.app/api/v1",
+  description: "Pinhere 生产 API（Vercel）。",
 }]);
 assert.equal(entries.length, 34);
 assert.equal(schemas.length, 36);
@@ -54,7 +54,7 @@ assert.equal(spec.components.securitySchemes.pinherePat.bearerFormat, "ph_pat_*"
 
 const actualHash = createHash("sha256").update(bytes).digest("hex");
 assert.equal(actualHash, provenance.source.sha256);
-assert.equal(provenance.source.commit, "576e6f7160b5bb04d5856620def23c6bd3b25082");
+assert.equal(provenance.source.commit, "4df51d12e3a707454ffdcef310de5d1e41bbbdfe");
 assert.equal(provenance.output.operations, 34);
 assert.equal(provenance.output.schemas, 36);
 assert.equal(provenance.output.proxyDisabledOperations, 34);
