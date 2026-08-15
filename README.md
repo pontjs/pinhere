@@ -6,9 +6,8 @@ canonical PontxSpec.
 This repository is generated from the MIT-licensed, product-owned contract in
 [`jasonHzq/pinhere`](https://github.com/jasonHzq/pinhere). The source and
 package are ready for public review, but npm publication remains fail-closed
-until `pinhere.dev` serves the production API and canonical
-`/.well-known/pontx.json` discovery resource. The current Vercel Preview is not
-the canonical production origin.
+until the canonical `https://pinhere.dev/.well-known/pontx.json` response is
+DNS-reachable and byte-for-byte matches the pinned canonical JSON contract.
 
 ## Safety boundary
 
