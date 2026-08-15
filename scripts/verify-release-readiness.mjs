@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { verifyCanonicalDiscovery } from "./lib/canonical-discovery.mjs";
 
 const packageJson = JSON.parse(await readFile(resolve("package.json"), "utf8"));
 const provenance = JSON.parse(await readFile(resolve("source.provenance.json"), "utf8"));
@@ -18,6 +19,12 @@ assert.equal(provenance.source.license, packageJson.license,
   "Release blocked: package and contract provenance licenses differ.");
 assert.equal(provenance.discovery.status, "verified",
   "Release blocked: canonical Pinhere discovery is not verified.");
+const sourceBytes = await readFile(resolve("pontx-spec.json"));
+await verifyCanonicalDiscovery({
+  url: provenance.discovery.url,
+  sourceBytes,
+  expectedCanonicalJsonSha256: provenance.discovery.canonicalJsonSha256,
+});
 assert(!/(?:^|\s)(?:link|file|workspace):|^\s*overrides\s*:/im.test(`${workspace}\n${lockfile}`),
   "Release blocked: local dependency links or workspace overrides remain.");
 

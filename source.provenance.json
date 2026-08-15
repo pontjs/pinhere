@@ -11,7 +11,8 @@
   },
   "discovery": {
     "url": "https://pinhere.dev/.well-known/pontx.json",
-    "status": "domain-unregistered",
+    "status": "pending-dns-verification",
+    "canonicalJsonSha256": "7a98a17ca28eca19325b0aaa5b02fd54a119c1e36adcf99ea40bf1896c777d3c",
     "verifiedAt": "2026-08-15"
   },
   "output": {
@@ -20,6 +21,6 @@
     "proxyDisabledOperations": 34
   },
   "releaseBlockedBy": [
-    "pinhere.dev is unregistered, so the canonical production API and discovery URL are unreachable"
+    "pinhere.dev is attached to the production deployment but its DNS and canonical discovery bytes are not yet verified"
   ]
 }
