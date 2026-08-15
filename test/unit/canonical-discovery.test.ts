@@ -13,7 +13,7 @@ const canonicalHash = createHash("sha256").update(canonicalBytes).digest("hex");
 
 test("verifies a canonical discovery response against the pinned source contract", async () => {
   await expect(verifyCanonicalDiscovery({
-    url: "https://pinhere.dev/.well-known/pontx.json",
+    url: "https://pinhere-jasonhzqs-projects.vercel.app/.well-known/pontx.json",
     sourceBytes,
     expectedCanonicalJsonSha256: canonicalHash,
     fetchImpl: async () => new Response(canonicalBytes, {
@@ -25,7 +25,7 @@ test("verifies a canonical discovery response against the pinned source contract
 
 test("rejects a discovery response with noncanonical bytes", async () => {
   await expect(verifyCanonicalDiscovery({
-    url: "https://pinhere.dev/.well-known/pontx.json",
+    url: "https://pinhere-jasonhzqs-projects.vercel.app/.well-known/pontx.json",
     sourceBytes,
     expectedCanonicalJsonSha256: canonicalHash,
     fetchImpl: async () => new Response("{}", {

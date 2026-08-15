@@ -1,4 +1,4 @@
-export const DEFAULT_BASE_URL = "https://pinhere.dev/api/v1";
+export const DEFAULT_BASE_URL = "https://pinhere-jasonhzqs-projects.vercel.app/api/v1";
 export const ACCESS_TOKEN_ENV = "PINHERE_ACCESS_TOKEN";
 export const SESSION_COOKIE_ENV = "PINHERE_SESSION_COOKIE";
 export const BASE_URL_ENV = "PINHERE_BASE_URL";

@@ -4,10 +4,11 @@ Type-safe Pinhere SDK and preview-first CLI generated only from Pinhere's
 canonical PontxSpec.
 
 This repository is generated from the MIT-licensed, product-owned contract in
-[`jasonHzq/pinhere`](https://github.com/jasonHzq/pinhere). The source and
-package are ready for public review, but npm publication remains fail-closed
-until the canonical `https://pinhere.dev/.well-known/pontx.json` response is
-DNS-reachable and byte-for-byte matches the pinned canonical JSON contract.
+[`jasonHzq/pinhere`](https://github.com/jasonHzq/pinhere). Its canonical
+production origin is
+[`pinhere-jasonhzqs-projects.vercel.app`](https://pinhere-jasonhzqs-projects.vercel.app)
+and it publishes the reviewed contract at
+`/.well-known/pontx.json`.
 
 ## Safety boundary
 

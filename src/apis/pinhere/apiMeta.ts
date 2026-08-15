@@ -3,7 +3,7 @@ export const specMeta = {
   hasTags: true,
   url: [
     {
-      url: "https://pinhere.dev/api/v1"
+      url: "https://pinhere-jasonhzqs-projects.vercel.app/api/v1"
     }
   ],
   apis: {
