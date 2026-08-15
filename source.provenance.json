@@ -1,0 +1,26 @@
+{
+  "formatVersion": 1,
+  "source": {
+    "kind": "product-owned-pontx-spec",
+    "repository": "https://github.com/jasonHzq/pinhere",
+    "path": "apps/web/specs/spec.pontx.json",
+    "commit": "e1ad3385463ac3d97a750cd134fb75dea077c334",
+    "url": "https://raw.githubusercontent.com/jasonHzq/pinhere/e1ad3385463ac3d97a750cd134fb75dea077c334/apps/web/specs/spec.pontx.json",
+    "sha256": "2a5f9d5796eefc683428b72d676dedc75f85e02b7b97f8de8c7942e66256ab5f",
+    "license": null
+  },
+  "discovery": {
+    "url": "https://pinhere.dev/.well-known/pontx.json",
+    "status": "unreachable",
+    "verifiedAt": "2026-08-15"
+  },
+  "output": {
+    "operations": 34,
+    "schemas": 36,
+    "proxyDisabledOperations": 34
+  },
+  "releaseBlockedBy": [
+    "No redistribution license",
+    "pinhere.dev is not bound and the canonical discovery URL is unreachable"
+  ]
+}
